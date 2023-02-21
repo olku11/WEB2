@@ -7,14 +7,14 @@
     {% if "ol" == list %}
         <ol>
         {% for user in user_list %}
-            <li><h3>{{ user }}</h3>
+            <li><h4>{{ user }}</h4>
             </li>
         {% endfor %}
         </ol>
     {% elif "ul" == list %}
         <ul>
         {% for user in user_list %}
-            <li><h3>{{ user }}</h3></li>
+            <li><h4>{{ user }}</h4></li>
         {% endfor %}
         </ul>
     {% endif %}
