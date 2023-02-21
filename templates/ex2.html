@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<br/>
+    {% if "инженер" == prof %}
+        <h3>Тренажеры для инженеров</h3>
+        <img src="/static/images/inj.jpg" height=300 width=300 alt="не нашлось"/>
+    {% elif "строитель" == prof %}
+        <h3>Тренажеры для строителей</h3>
+        <img src="/static/images/build.jpg" height=300 width=300 alt="не нашлось"/>
+    {% else %}
+        <h3>Другие тренажеры</h3>
+        <img src="/static/images/who.jpg" height=300 width=300 alt="не нашлось"/>
+    {% endif %}
+{% endblock %}
