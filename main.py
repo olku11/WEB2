@@ -27,5 +27,21 @@ def list_prof(list):
     return render_template("ex3.html", list=list, user_list=pr)
 
 
+@app.route("/answer")
+@app.route("/auto_answer")
+def answer():
+    title = "Анкета пролетария"
+    surname = "Иванов"
+    name = "Иван"
+    education = "среднее професиональное"
+    profession = "токарь"
+    sex = "м"
+    motivation = "Хочу делать табуретки на Марсе"
+    ready = "True"
+    d = {"Заголовок": title, "Фамилия": surname, "Имя": name, "Образование": education,
+         "Профессия": profession, "Пол": sex, "Мотивация": motivation, "Готовы остаться на Марсе?": ready}
+    return render_template("ex4.html", d=d)
+
+
 if __name__ == "__main__":
     app.run(port=8080, host="127.0.0.1")
