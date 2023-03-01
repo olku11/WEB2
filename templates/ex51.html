@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<br/>
+{% if k == 0 %}
+<div>
+    <h2>Отклонено.</h2>
+</div>
+{% else %}
+<div>
+<h2>Открыто.</h2>
+</div>
+{% for i in data %}
+<p>{{ i }}: {{ data[i] }}</p>
+{% endfor %}
+{% endif %}
+{% endblock %}
