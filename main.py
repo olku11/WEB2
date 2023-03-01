@@ -37,7 +37,7 @@ def answer():
     profession = "токарь"
     sex = "м"
     motivation = "Хочу делать табуретки на Марсе"
-    ready = "True"
+    ready = "Да"
     d = {"Заголовок": title, "Фамилия": surname, "Имя": name, "Образование": education,
          "Профессия": profession, "Пол": sex, "Мотивация": motivation, "Готовы остаться на Марсе?": ready}
     return render_template("ex4.html", d=d)
